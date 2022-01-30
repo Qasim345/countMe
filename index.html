@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qasim Sarwari" />
+    <meta name="description" content="countMe.js is a jQuery plugin for counting numbers, very esay to use. created by Qasim Sarwari." />
+    <title>countMe | jQuery plugin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        
+        .flex {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .flex div {
+            width: 150px;
+            height: 150px;
+            padding: 50px 0;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            background: #19f;
+            color: #fff;
+            font-family: Arial;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div>
+            <h1 id="num1">250</h1>
+            <h3>Projects</h3>
+        </div>
+        <div>
+            <h1 id="num2">435</h1>
+            <h3>Projects Done</h3>
+        </div>
+        <div>
+            <h1 id="num3">220</h1>
+            <h3>Happy Clients</h3>
+        </div>
+        <div>
+            <h1 id="num4">170</h1>
+            <h3>Get Awards</h3>
+        </div>
+    </div>
+
+    <script src="res/jquery.min.js"></script>
+    <script src="res/js/countMe.min.js"></script>
+    <script>
+        // $(selector).countMe(delay,speed)
+        $("#num1").countMe(40,65);
+        $("#num2").countMe(30, 30);
+        $("#num3").countMe(40, 50);
+        $("#num4").countMe(100,200);
+    </script>
+</body>
+
+</html>
